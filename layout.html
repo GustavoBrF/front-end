@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            #main{
+                display: grid;
+                grid-template-areas: "header header" "nav nav" "content aside" "footer footer";
+                grid-template-rows: 15vh 10vh 55vh 20vh;
+
+            }
+
+            .mainheder{grid-area: header;background-color: red;}
+            .mainnav{grid-area: nav; background-color: rgb(0, 68, 255);}
+            .maincontent{grid-area: content; background-color: rgb(255, 0, 200) ;}
+            .mainaside{grid-area: aside; background-color: rgb(250, 0, 0);}
+            .mainFooter{grid-area: footer;background-color: blue;}
+            
+            main.logo{
+                color: #ffffff;
+                font-size:10em;
+                font-weight: bold;
+                border: 1px;
+            }
+            main.fant{
+                color: blueviolet;
+                font-weight: 20;
+                border: 1  solid red;
+            }
+        </style>
+    </head>
+    <body>
+        <main id="main">
+            <header class="mainheder">
+                <span class="logo">ENL FRONT-END</span>
+                <span class="fant">DEVELOPER</span>
+            </header>
+            <nav class="mainnav">Nav</nav>
+            <article class="maincontent">Cotent</article>
+            <aside class="mainaside">Aside</aside>
+            <footer class="mainFooter">Footer</footer>
+        </main>
+    </body>
+</html>
